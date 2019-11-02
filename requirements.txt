@@ -1,3 +1,4 @@
+graphene
 flask
 Flask-Cors
 Flask-Script

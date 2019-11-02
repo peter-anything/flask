@@ -1,9 +1,9 @@
-from app import db
-from app.common import BaseModel
+from apps import db
+from apps.common import BaseModel
 
 
-class GitlabEvent(BaseModel):
-    __table__name = 'gitlab_event'
+class Event(BaseModel):
+    __tablename__ = 'gitlab_event'
     project_id = db.Column(db.Integer)
     project_name = db.Column(db.String(32), index=True)
     push_data_ref = db.Column(db.String(32), default='')
